@@ -1,0 +1,241 @@
+/* .Cont-bg {
+  position: relative;
+  padding: 40px 20px;
+  min-height: 60vh;
+  background-color: #f2f2f7;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Cont-bg h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.intro-text {
+  font-size: x-large;
+  color: rgb(109, 108, 108);
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-size: xx-large;
+  color: navy;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: x-large;
+  color: rgb(101, 101, 101);
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.icon-containers {
+  position: relative;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.lap {
+  position: absolute;
+  top: -25rem;
+  left: 3.5%;
+  width: 9rem;
+}
+
+.bracket {
+  position: absolute;
+  top: -8rem;
+  left: 9%;
+  width: 49px;
+}
+
+.bulb {
+  position: absolute;
+  top: -27rem;
+  left: 78%;
+  width: 100px;
+  transform: translateX(-50%);
+}
+
+.phon {
+  position: absolute;
+  top: -175px;
+  right: 4%;
+  width: 130px;
+}
+
+.color-dots {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.yellow-dot {
+  background-color: #ffd700;
+  bottom: -1rem;
+  left: 10%;
+}
+
+.purple-dot {
+  background-color: #b6b6ff;
+  top: -18.3rem;
+  right: 29%;
+  width: 14px;
+  height: 14px;
+}
+
+.blue-dot {
+  background-color: navy;
+  top: -34rem;
+  left: 11%;
+  width: 14px;
+  height: 14px;
+}
+
+.lightyellow-dot {
+  background-color: #eade9f;
+  top: -1rem;
+  left: 82%;
+  width: 12px;
+  height: 12px;
+}
+
+.Cont-bg {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ */
+
+
+
+
+ .img {
+  margin-left: 3.5rem;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.Aboutus-bg {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.txt {
+  margin-left: -2rem;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.txt h3 {
+  color: navy;
+}
+
+.txt h2 {
+  padding: 7px 0px;
+}
+
+.txt p {
+  color: gray;
+  font-size: 20px;
+}
+
+.abt-bt {
+  margin-left: 5.4rem;
+}
+
+.abt-bt h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.abt-bt p {
+  font-size: 22px;
+  color: gray;
+  text-align: center;
+}
+
+.abt-bt p1 {
+  display: block;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0px 100px;
+  
+}
+
+.count span {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.count span::after {
+  content: '';
+  width: 27px;
+  height: 26px;
+  background-image: url(https://kosuketechnologies.com/assets/img/countafter.svg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 4rem;
+}
+
+.count p {
+  font-size: 22px;
+  max-width: 300px;
+  margin: 10px auto 0;
+  color: #666;
+}
+
+.Aboutus-bg {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,245 @@
+/* .aboutus2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.aboutus2-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus2-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-row {
+  justify-content: flex-start;
+}
+
+.rounded-image {
+  border-radius: 30px;
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
+
+.rounded-image.large {
+  width: 240px;
+  height: 240px;
+}
+
+.rounded-image.small {
+  width: 120px;
+  height: 120px;
+}
+
+.aboutus2-text {
+  max-width: 600px;
+}
+
+.aboutus2-text h4 {
+  color: navy;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutus2-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aboutus2-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.read-more-btn {
+  padding: 10px 24px;
+  border: 2px solid navy;
+  background: transparent;
+  color: navy;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: navy;
+  color: white;
+}
+
+
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.count-item {
+  flex: 1 1 200px;
+  margin: 20px;
+  position: relative;
+}
+
+.count-item span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1c1c1c;
+  position: relative;
+}
+
+.count-item span::after {
+  content: '✨';
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  font-size: 18px;
+  color: #1b1b64;
+}
+
+.count-item p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+
+.img {
+  margin-left: 3.5rem;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.Aboutus-bg {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.txt {
+  margin-left: -2rem;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.txt h3 {
+  color: navy;
+}
+
+.txt h2 {
+  padding: 7px 0px;
+}
+
+.txt p {
+  color: gray;
+  font-size: 20px;
+}
+
+.abt-bt {
+  margin-left: 5.4rem;
+}
+
+.abt-bt h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.abt-bt p {
+  font-size: 22px;
+  color: gray;
+  text-align: center;
+}
+
+.abt-bt p1 {
+  display: block;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0px 100px;
+  
+}
+
+.count span {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.count span::after {
+  content: '';
+  width: 27px;
+  height: 26px;
+  background-image: url(https://kosuketechnologies.com/assets/img/countafter.svg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 4rem;
+}
+
+.count p {
+  font-size: 22px;
+  max-width: 300px;
+  margin: 10px auto 0;
+  color: #666;
+}
+
+.Aboutus-bg {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

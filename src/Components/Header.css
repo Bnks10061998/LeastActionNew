@@ -1,0 +1,104 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  align-items:center;
+  color: navy;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:25px;
+}
+
+.logo-img {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px;;
+  margin-left: 70px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 70px;
+  transform: color 1.3s ease, background-color 1.3s ease;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgb(41, 37, 37);
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.nav-item:hover {
+  color: navy;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 30px 30px;         
+  font-size: 16px;
+  gap: 20px;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+  color: white; 
+  transition: background-color 0.3s ease;
+}
+
+.show-dropdown {
+  display: flex;
+  transform: scale(1.0);
+}
+
+.search-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hover:hover {
+  transform: scale(1.02);
+}
+
+.elv-bus-anime {
+  transition: all 0.5s ease-in-out;
+}
