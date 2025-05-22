@@ -13,12 +13,12 @@ const Footer = () => {
   ];
 
   const services = [
-    { label: "UI UX Designing", path: "/services/ui-ux" },
-    { label: "Web Development", path: "/services/web-development" },
-    { label: "Cloud Services", path: "/services/cloud" },
-    { label: "Mobile Development", path: "/services/mobile" },
-    { label: "AI & ML Services", path: "/services/ai-ml" },
-    { label: "IT Support and Maintenance", path: "/services/it-support" }
+    { label: "UI UX Designing", path: "/ui-ux-designing" },
+    { label: "Web Development", path: "/web-development" },
+    { label: "Cloud Services", path: "/cloud" },
+    { label: "Mobile Development", path: "/mobile" },
+    { label: "AI & ML Services", path: "/ai-ml" },
+    { label: "IT Support and Maintenance", path: "/it-support" }
   ];
 
   const help = [
