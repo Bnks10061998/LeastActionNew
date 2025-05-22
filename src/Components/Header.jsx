@@ -31,9 +31,9 @@ const Header = () => {
           <div className={`dropdown-content ${isDropdownOpen ? 'show-dropdown' : ''}`}>
             <a href="/ui-ux-designing" className="nav-item">UI UX Designing</a>
             <a href="/web-development" className="nav-item">Web Development</a>
-            <a href="#Cloud Services" className="nav-item">Cloud Services</a>
+            <a href="/cloudservices" className="nav-item">Cloud Services</a>
             <a href="/mobile-development" className="nav-item">Mobile Development</a>
-            <a href="#AI & ML Services" className="nav-item">AI & ML Services</a>
+            <a href="/aiml" className="nav-item">AI & ML Services</a>
             <a href="/itsupportmaintenance" className="nav-item">IT Support and Maintenance</a>
           </div>
         </div>

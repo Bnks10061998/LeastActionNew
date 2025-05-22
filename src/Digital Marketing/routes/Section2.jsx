@@ -41,9 +41,9 @@ const Section2 = () => {
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
         <div className="w-full md:w-1/2">
-          <p className="text-sky-500 text-xl md:text-3xl mb-5">Your Essential Digital Marketing Experts.</p>
+          <p className="text-sky-500 text-xl md:text-3xl mb-5">Your Essential IT Support & Maintenance Experts.</p>
           <p className="text-2xl md:text-4xl leading-relaxed">
-           Elevate Your Brand with Cutting-Edge Digital Marketing.
+           Elevate Your Brand with Cutting-Edge IT Support and Maintenance
           </p>
         </div>
 
@@ -57,8 +57,8 @@ const Section2 = () => {
       {/* Services Section */}
       <div className="mt-10">
         <h2 className="text-2xl md:text-4xl text-center leading-relaxed">
-          We provide comprehensive digital 
-          <br className="hidden md:block" /> marketing solutions.
+          We provide comprehensive  
+          <br className="hidden md:block" /> IT Support and Maintenance solutions.
         </h2>
 
         <motion.div

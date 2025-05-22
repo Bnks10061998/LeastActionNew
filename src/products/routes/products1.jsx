@@ -8,7 +8,8 @@ import { FaUserAlt } from "react-icons/fa";
 
 const Products1 = () => {
   return (
-    <div className="bg-[url('../../assets/product/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
+    // <div className="bg-[url('../../assets/product/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
+     <div className="bg-[url('/src/assets/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
       <style jsx>{`
         @keyframes borderBlink {
         0%   { border-color: rgba(34, 197, 94, 0.2); }
@@ -27,7 +28,7 @@ const Products1 = () => {
           <span className="text-sky-500 font-bold">Shine</span> in the <span className="text-sky-500 font-bold">Digital</span> World
         </h2>
       </div>
-      <FaHandHoldingHeart className='text-4xl text-gray-500 relative top-25 right-90'/>
+      <FaHandHoldingHeart className='text-4xl text-gray-500 relative top-75 right-98'/>
       <FaHandshake className='text-4xl text-gray-500 relative top-50 left-10' />
       <FaUserAlt className='text-4xl text-gray-500 relative top-100 right-100' />
 
@@ -67,7 +68,7 @@ const Products1 = () => {
           <img src={logo} alt="Cozy Invite Logo" className="w-80 h-80 object-contain mb-4" />
           <h3 className="text-yellow-400 text-3xl font-bold mb-2">Cozy invite</h3>
           <p className="text-sm text-gray-700 max-w-sm">
-            CozyInvite by Kosuke Technologies Pvt. Ltd. boosts studios' digital presence with a portfolio site,
+            CozyInvite by Least Action. boosts studios' digital presence with a portfolio site,
             digital invites, lead generation, and an online store.
           </p>
         </div>

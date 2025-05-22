@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const Webdesign2 = () => {
+const Section2 = () => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { triggerOnce: false });
 
   useEffect(() => {
     if (inView) {
-      controls.start("show");
+      controls.start('show');
     } else {
-      controls.start("hidden");
+      controls.start('hidden');
     }
   }, [inView, controls]);
 
@@ -20,8 +20,8 @@ const Webdesign2 = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
-      }
-    }
+      },
+    },
   };
 
   const item = {
@@ -31,48 +31,52 @@ const Webdesign2 = () => {
       y: 0,
       transition: {
         duration: 0.7,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
     <div className="px-4 md:px-20 py-10 mt-10">
-      {/* Top Section - Unchanged */}
+      {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
         <div className="w-full md:w-1/2">
-          <p className="text-sky-500 text-xl md:text-3xl mb-5">Your Essential Web Designers</p>
+          <p className="text-sky-500 text-xl md:text-3xl mb-5">Your Essential AI and ML Technologies.</p>
           <p className="text-2xl md:text-4xl leading-relaxed">
-            Designing Websites That Make Your Brand Shine
+           Turn Your Innovative Ideas into Profitable AI and ML Technologies
+
+
           </p>
         </div>
 
         <div className="w-full md:w-1/2">
           <p className="text-gray-600 text-md md:text-xl leading-relaxed mt-0 md:mt-10">
-            At Least Action, we create high-quality, visually stunning, and responsive web designs that capture your brand's essence and deliver a seamless experience across all devices, driving impactful business results.
+            Stand out from the competition with Least Action' specialized web application development. We transform your visionary concepts into high-impact applications that elevate your business and deliver measurable results.
           </p>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className='mt-10' ref={ref}>
+      <div className="mt-10">
         <h2 className="text-2xl md:text-4xl text-center leading-relaxed">
-          We provide comprehensive web design <br className="hidden md:block" /> solutions.
+         We provide comprehensive AI and ML Technologies 
+          <br className="hidden md:block" /> solutions.
         </h2>
 
         <motion.div
+          ref={ref} // ✅ Moved ref here to track visibility of all cards
           className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8"
           variants={container}
           initial="hidden"
           animate={controls}
         >
           {/* Card 1 */}
-          <motion.div className="p-6 border-b md:border-b-0 md:border-r-2  border-gray-600" variants={item}>
+          <motion.div className="p-6 border-b md:border-b-0 md:border-r-2 border-gray-600" variants={item}>
             <div className="relative flex flex-col-reverse md:flex-row md:justify-between md:items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl  mb-4 md:mb-8 font-semibold text-sky-500">Logo Design</h3>
+                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Static web Application</h3>
                 <p className="text-gray-600 text-lg md:text-xl mt-2">
-                  We create visually compelling logos that capture your brand's essence and resonate with your audience, ensuring they are unique and memorable.
+                  Static web design services offer fast, affordable websites with fixed content, perfect for businesses seeking a simple, secure, and low-maintenance online presence.
                 </p>
               </div>
               <div className="relative w-full">
@@ -82,12 +86,12 @@ const Webdesign2 = () => {
           </motion.div>
 
           {/* Card 2 */}
-          <motion.div className="p-6 border-b md:border-b-0 md:border-r-2  border-gray-600" variants={item}>
+          <motion.div className="p-6 border-b md:border-b-0 md:border-r-2 border-gray-600" variants={item}>
             <div className="relative flex flex-col-reverse md:flex-row md:justify-between md:items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl  mb-4 md:mb-8 font-semibold text-sky-500">Graphic Design</h3>
+                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Dynamic Website</h3>
                 <p className="text-gray-600 text-lg md:text-xl mt-2">
-                  At Kosuke, we craft budget-friendly, cohesive designs that reflect your brand. Our mobile-friendly solutions elevate your online presence and set you apart.
+                  Dynamic websites use scripts to generate content from databases, allowing for customizable product pages and categories that adapt to user preferences.
                 </p>
               </div>
               <div className="relative w-full">
@@ -97,12 +101,12 @@ const Webdesign2 = () => {
           </motion.div>
 
           {/* Card 3 */}
-          <motion.div className="p-6  border-b md:border-b-0 md:border-r-2  border-gray-600" variants={item}>
+          <motion.div className="p-6 border-b md:border-b-0 border-gray-600" variants={item}>
             <div className="relative flex flex-col-reverse md:flex-row md:justify-between md:items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Website Redesign</h3>
+                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Custom Software Development</h3>
                 <p className="text-gray-600 text-lg md:text-xl mt-2">
-                  At Kosuke, we enhance your website's design and functionality, creating a modern, mobile-optimized experience that engages visitors and drives growth.
+                 We create custom software solutions tailored to your needs and provide strategic advice to ensure success. Our services support both startups and established enterprises.
                 </p>
               </div>
               <div className="relative w-full">
@@ -112,16 +116,30 @@ const Webdesign2 = () => {
           </motion.div>
 
           {/* Card 4 */}
-          <motion.div className="p-6 md:col-start-2 md:col-span-1" variants={item}>
+          <motion.div className="p-6 md:col-start-1" variants={item}>
             <div className="relative flex flex-col-reverse md:flex-row md:justify-between md:items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl  mb-4 md:mb-8 font-semibold text-sky-500">Brochure Design</h3>
+                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Online booking software</h3>
                 <p className="text-gray-600 text-lg md:text-xl mt-2">
-                  We create strategic brochures that enhance your business's appeal. Our design team analyzes your offerings to craft attention-grabbing materials that build trust and convey information effectively.
+                 Online booking software provides customized platforms for scheduling and reservations, with real-time availability, automated confirmations, and multiple payment options, integrating seamlessly with existing websites.
                 </p>
               </div>
               <div className="relative w-full">
                 <span className="text-6xl md:text-8xl text-gray-300 font-bold absolute right-0 top-0 md:static mb-4 md:mb-0">04</span>
+              </div>
+            </div>
+          </motion.div>
+          {/* Card 5 */}
+          <motion.div className="p-6 md:col-start-2" variants={item}>
+            <div className="relative flex flex-col-reverse md:flex-row md:justify-between md:items-start">
+              <div>
+                <h3 className="text-2xl sm:text-3xl mb-4 md:mb-8 font-semibold text-sky-500">Ecommerce Website</h3>
+                <p className="text-gray-600 text-lg md:text-xl mt-2">
+                 eCommerce web design services build interactive online stores with shopping carts and multiple payment options, streamlining online business and enhancing the shopping experience to help businesses stand out globally.
+                </p>
+              </div>
+              <div className="relative w-full">
+                <span className="text-6xl md:text-8xl text-gray-300 font-bold absolute right-0 top-0 md:static mb-4 md:mb-0">05</span>
               </div>
             </div>
           </motion.div>
@@ -131,4 +149,4 @@ const Webdesign2 = () => {
   );
 };
 
-export default Webdesign2;
+export default Section2;

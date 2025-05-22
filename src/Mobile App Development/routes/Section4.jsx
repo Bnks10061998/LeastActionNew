@@ -38,9 +38,9 @@ const Section4 = () => {
 
   return (
     <div className="mx-4 sm:mx-16 px-4 py-12">
-      <p className="text-sky-500 text-2xl mb-5">WEB APP DEVELOPMENT Service</p>
+      <p className="text-sky-500 text-2xl mb-5">Mobile Application Service</p>
       <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
-        Why Least Action as Your Web Application Development Company
+        Why Least Action as Your Mobile Application Development Company
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {features.map((feature, index) => (

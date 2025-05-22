@@ -8,7 +8,7 @@ import {
   Clock
 } from 'lucide-react';
 
-const webdesign4 = () => {
+const Section4 = () => {
   const features = [
     {
       icon: <Users className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
@@ -38,9 +38,9 @@ const webdesign4 = () => {
 
   return (
     <div className="mx-4 sm:mx-16 px-4 py-12">
-      <p className="text-sky-500 text-2xl mb-5">WEB APP DEVELOPMENT Service</p>
+      <p className="text-sky-500 text-2xl mb-5">Cloud Application Services</p>
       <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
-        Why Least Action as Your Web Application Development Company
+        Why Least Action as Your Cloud Application Development Company
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {features.map((feature, index) => (
@@ -57,4 +57,4 @@ const webdesign4 = () => {
   );
 };
 
-export default webdesign4;
+export default Section4;

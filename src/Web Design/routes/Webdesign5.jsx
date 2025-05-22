@@ -2,35 +2,39 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Webdesign5 = () => {
+const Section5 = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      // Removed the 'once: true' to make animations trigger on every scroll
       easing: 'ease-in-out',
     });
   }, []);
 
   const items = [
     {
-      title: "Goal Identification:",
+      title: "Holistic User Insights:",
       description:
-        "We start by understanding your unique objectives to ensure our designs align with your business goals.",
+        "We combine data and insights to understand users deeply and create resonant designs.",
     },
     {
-      title: "Visual Elements:",
+      title: "Tailored Solutions:",
       description:
-        "Our team crafts visual elements, including logos and color schemes, that make your brand stand out.",
+        "Our designs are custom-made to fit your specific needs and challenges.",
     },
     {
-      title: "Content Creation:",
+      title: "Cutting-Edge Technology:",
       description:
-        "We develop engaging content that resonates with your audience and supports your brand message.",
+        "We use the latest tools and trends to deliver innovative and effective designs.",
     },
     {
-      title: "Testing:",
+      title: "Agile and Adaptive:",
       description:
-        "Rigorous testing ensures all design elements function seamlessly and provide an optimal user experience.",
+        "We quickly adapt to changes and feedback, refining designs in real-time.",
+    },
+    {
+      title: "Focus on Results:",
+      description:
+        "We design with clear goals in mind, aiming to boost user engagement and achieve your business objectives",
     },
   ];
 
@@ -39,17 +43,18 @@ const Webdesign5 = () => {
       <div className="text-center mb-12">
         <h2 className="text-xl font-semibold text-sky-500 mb-2">Why choose us</h2>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Empower Your Success with Kosuke <br /> Technologies
+          Empower Your Success with Least Action
         </h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {items.map((item, index) => (
           <div
             key={index}
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay={index * 200}
-            className="bg-white rounded-xl py-10 px-5 mx-5 shadow-[0_8px_30px_rgba(0,0,0,0.45)] transition duration-300"
+            className={`bg-white rounded-xl py-10 px-6 shadow-[0_8px_30px_rgba(0,0,0,0.6)] transition duration-300
+              ${index === 4 ? 'md:col-span-2 md:w-1/2 md:mx-auto' : ''}`}
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
             <p className="text-gray-600">{item.description}</p>
@@ -60,4 +65,4 @@ const Webdesign5 = () => {
   );
 };
 
-export default Webdesign5;
+export default Section5;

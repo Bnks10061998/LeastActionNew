@@ -109,13 +109,16 @@ function App() {
       <Routes>
         <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /></>} />
         <Route path="/clients" element={<Clients />} />
-        <Route path="/digital-marketing" element={<Digitalmarketing />} />
+        <Route path="/itsupportmaintenance" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />
         <Route path="/products" element={<Products />} />
         <Route path="/ui-ux-designing" element={<Uiux />} />
-        <Route path="/web-design" element={<Webdesign />} />
+        {/* AI and ML  */}
+        <Route path="/aiml" element={<Webdesign />} />
         <Route path="/web-development" element={<Webdevelopment />} />
-        <Route path="/web-security" element={<Websecurity />} />
+        {/* Cloud Services */}
+        <Route path="/cloudservices" element={<Websecurity />} />
+        
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/services" element={<Services />} />
         <Route path='/contact' element={[<Contactus/>,<Contactus2/>]} />
