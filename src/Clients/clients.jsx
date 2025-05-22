@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Clients1 from '../Clients/routes/clients1.jsx';
+import Clients1 from './routes/Clients1.jsx';
 import Clients2 from '../Clients/routes/clients2.jsx';
 import Clients3 from '../Clients/routes/clients3.jsx';
 
