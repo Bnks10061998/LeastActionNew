@@ -22,19 +22,18 @@ const Header = () => {
       </div>
 
       <nav className="nav">
-        <a href="#home" className="nav-item">Home</a>
+        <a href="/" className="nav-item">Home</a>
 
         <div
           className="dropdown">
           <button className="nav-item" onClick={toggleDropdown}>
           Service ▼</button>
           <div className={`dropdown-content ${isDropdownOpen ? 'show-dropdown' : ''}`}>
-            <a href="/ui-ux" className="nav-item">UI UX Designing</a>
+            <a href="/ui-ux-designing" className="nav-item">UI UX Designing</a>
             <a href="/web-development" className="nav-item">Web Development</a>
-            <a href="/Cloud Services" className="nav-item">Cloud Services</a>
+            <a href="#Cloud Services" className="nav-item">Cloud Services</a>
             <a href="/mobile-development" className="nav-item">Mobile Development</a>
-            <a href="/AI & ML Services" className="nav-item">AI & ML Services</a>
-            <a href="/itsupportmaintenance" className="nav-item">IT Support and Maintenance</a>
+            <a href="#AI & ML Services" className="nav-item">AI & ML Services</a>
           </div>
         </div>
 
