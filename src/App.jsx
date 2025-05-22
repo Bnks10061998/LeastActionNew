@@ -98,7 +98,6 @@ import Aboutus3 from './Components/Aboutus3';
 import Aboutus4 from './Components/Aboutus4';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './Components/wraper/Footer';
 
 function App() {
   return (
@@ -107,7 +106,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /></>} />
+        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /><Footer1 /><Footer2 /><Footer3 /></>} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/digital-marketing" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />

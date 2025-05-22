@@ -95,7 +95,7 @@ function Aboutus2() {
               <p>Thousands of <br /> successful business</p>
             </div>
             <div className='count-item'>
-              <span className='count-3'>20</span>
+              <span className='count-3'>50</span>
               <p>Total clients who love <br /> HighTech</p>
             </div>
           </div>
