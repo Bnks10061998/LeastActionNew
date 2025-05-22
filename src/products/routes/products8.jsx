@@ -1,9 +1,9 @@
 import React from 'react';
-import invitation1 from '../../assets/product/invitation1.svg';
-import invitation2 from '../../assets/product/invitation2.svg';
-import invitation3 from '../../assets/product/invitation3.svg';
-import invitation4 from '../../assets/product/invitation4.svg';
-import invitation5 from '../../assets/product/invitation5.svg';
+import invitation1 from '../../assets/product/Invitation1.svg';
+import invitation2 from '../../assets/product/Invitation2.svg';
+import invitation3 from '../../assets/product/Invitation3.svg';
+import invitation4 from '../../assets/product/Invitation4.svg';
+import invitation5 from '../../assets/product/Invitation5.svg';
 
 const Card = ({ title, description, buttonText, image, bgColor }) => (
   <div className={`${bgColor} p-4 rounded-lg flex flex-col items-center text-center`}>
