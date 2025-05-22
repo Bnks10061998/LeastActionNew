@@ -96,6 +96,7 @@ import Aboutus1 from './Components/Aboutus1';
 import Aboutus2 from './Components/Aboutus2';
 import Aboutus3 from './Components/Aboutus3';
 import Aboutus4 from './Components/Aboutus4';
+import Footer from './Components/wraper/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -106,7 +107,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /><Footer1 /><Footer2 /><Footer3 /></>} />
+        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /></>} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/digital-marketing" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />

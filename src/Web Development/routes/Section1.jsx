@@ -1,13 +1,12 @@
 import React from 'react';
+import codeBracket from '../../assets/UIUX Design/codebracket.svg';
+import heroSection4 from '../../assets/UIUX Design/Hero section 4.svg';
+import heroAsset1 from '../../assets/UIUX Design/Hero section asset 1.svg';
+import lightImg from "../../assets/UIUX Design/lightimg.svg";
 
-import codeBracket from '../../assets/codebracket.svg';
-import heroSection4 from '../../assets/Hero section 4.svg';
-import heroAsset1 from '../../assets/Hero section asset 1.svg';
-import lightImg from "../../assets/lightimg.svg";
-
-const Webdesign1 = () => {
+const Section1 = () => {
   return (
-    <div className="bg-[url('../../assets/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
+    <div className="bg-[url('/src/assets/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
 
       {/* Light image - adjusted for both mobile and desktop */}
       <img 
@@ -20,12 +19,11 @@ const Webdesign1 = () => {
         <h2 className="text-3xl md:text-3xl font-bold mt-10 mb-6 md:m-10">Web Development</h2>
         
         <p className="text-2xl md:text-[28px] text-gray-700 mb-10 md:mb-20 leading-relaxed md:leading-loose">
-          Achieve <span className="text-sky-500 font-semibold">Digital excellence</span>  with our web solutions,making your  <span className="text-sky-500 font-semibold">web</span><br className="hidden md:block" /> 
-          <span className="text-sky-500 font-semibold">ideas</span> real
+          Achieve<span className="text-sky-500 font-semibold" > Digital excellence </span> with our web solutions, making your    <span className="text-sky-500 font-semibold" > ideas  </span>  real.  
         </p>    
         
         <p className="text-md md:text-2xl text-gray-600 mt-4 leading-relaxed md:leading-loose md:ml-10 mb-8 md:mb-10">
-          Developing high-performance, scalable web applications is easy with us. We deliver unique web solutions tailored to your business, driving more sales 
+        Developing high-performance, scalable web applications is easy with us. We deliver unique web solutions tailored to your business, driving more sales.
         </p>
         
         <button className="mt-4 md:mt-6 px-8 md:px-10 py-2 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300 text-lg md:text-2xl">
@@ -39,10 +37,15 @@ const Webdesign1 = () => {
         alt="Asset 1" 
         className="absolute top-10 left-5 w-20 md:top-20 md:left-20 md:w-35 drop-shadow-xl" 
       />
-      <img 
+      {/* <img 
         src={heroSection4} 
         alt="Asset 4" 
-        className="hidden md:block absolute md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
+        className="hidden md:block absolute ml-10px md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
+      /> */}
+      <img
+        src={heroSection4}
+        alt="Asset 4"
+        className="hidden md:block absolute top-72 right-20 w-32 drop-shadow-xl"
       />
       <img 
         src={codeBracket} 
@@ -53,4 +56,4 @@ const Webdesign1 = () => {
   );
 };
 
-export default Webdesign1;
+export default Section1;

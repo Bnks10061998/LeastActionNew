@@ -37,10 +37,15 @@ const Section1 = () => {
         alt="Asset 1" 
         className="absolute top-10 left-5 w-20 md:top-20 md:left-20 md:w-35 drop-shadow-xl" 
       />
-      <img 
+      {/* <img 
         src={heroSection4} 
         alt="Asset 4" 
-        className="hidden md:block absolute md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
+        className="hidden md:block absolute ml-10px md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
+      /> */}
+      <img
+        src={heroSection4}
+        alt="Asset 4"
+        className="hidden md:block absolute top-72 right-20 w-32 drop-shadow-xl"
       />
       <img 
         src={codeBracket} 
