@@ -1,73 +1,3 @@
-
-// import './App.css'
-// import GlobalStyles from './styles/GlobalStyles';
-// import Header from './Components/Header';
-// import HeroSection from './Components/HeroSection';
-// import AboutUs2 from './Components/Aboutus2';
-// import Services from './Components/Services';
-// import Contact from './Components/Contactus2';
-// import Footer1 from './Components/Footer1';
-// import Footer2 from './Components/Footer2';
-// import Footer3 from './Components/Footer3';
-// import Clients from './Clients/clients';
-// import Digitalmarketing from './Digital Marketing/Digitalmarketing';
-// import Mobiledevelopement from './Mobile App Development/Mobileapp';
-// import Products from './products/Products';
-// import Uiux from './UXUI Designing/Uiux';
-// import Webdesign from './Web Design/Webdesign';
-// import Webdevelopment from './Web Development/Webdevelop';
-// import Websecurity from './Web Security/Web Security';
-// // import Contactus from './Components/Contactus';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import Contactus2 from './Components/Contactus2';
-// // import Footer1 from './Components/Footer1';
-// // import Footer2 from './Components/Footer2';
-// // import Footer3 from './Components/Footer3';
-// // import Aboutus1 from './Components/Aboutus1';
-// // import Aboutus2 from './Components/Aboutus2';
-// // import Aboutus3 from './Components/Aboutus3';
-// // import Aboutus4 from './Components/Aboutus4';
-
-// function App() {
-  
-
-//   return (
-//     <>
-//       <div>
-//       <GlobalStyles />
-//       <Header />
-//       <HeroSection /> 
-//       <AboutUs2 />
-//       <Services />
-//       <Contact />
-//       <Footer1 />
-//       <Footer2 />
-//       <Footer3 /> 
-
-        
-//       {/* <Clients/> */}
-//       {/* <Digitalmarketing/> */}
-//       {/* <Mobiledevelopement/> */}
-//       {/* <Products/> */}
-//       {/* <Uiux/> */}
-//       {/* <Webdesign/> */}
-//       {/* <Webdevelopment/> */}
-//       {/* <Websecurity/> */}
-
-
-      
-
-//        </div>
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
 import './App.css';
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './Components/Header';
@@ -97,7 +27,7 @@ import Aboutus2 from './Components/Aboutus2';
 import Aboutus3 from './Components/Aboutus3';
 import Aboutus4 from './Components/Aboutus4';
 import Footer from './Components/wraper/Footer';
-
+import WhyChooseUs from './Components/WhyChooseUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -107,7 +37,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /></>} />
+        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><WhyChooseUs/><Contact /></>} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/itsupportmaintenance" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />
