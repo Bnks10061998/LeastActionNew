@@ -98,6 +98,7 @@ import Aboutus3 from './Components/Aboutus3';
 import Aboutus4 from './Components/Aboutus4';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './Components/wraper/Footer';
 
 function App() {
   return (
@@ -106,25 +107,26 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /><Footer1 /><Footer2 /><Footer3 /></>} />
+        <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><Contact /></>} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/digital-marketing" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/ui-ux" element={<Uiux />} />
+        <Route path="/ui-ux-designing" element={<Uiux />} />
         <Route path="/web-design" element={<Webdesign />} />
         <Route path="/web-development" element={<Webdevelopment />} />
         <Route path="/web-security" element={<Websecurity />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/services" element={<Services />} />
-        <Route path='/contact' element={[<Contactus/>,<Contactus2/>,<Footer1/>,<Footer2/>,<Footer3/>]} />
+        <Route path='/contact' element={[<Contactus/>,<Contactus2/>]} />
         {/* <Route path="/about" element={<AboutUs2 />} /> */}
-        <Route path='/about' element={[<Aboutus1/>,<Aboutus2/>,<Aboutus3/>,<Aboutus4/>,<Footer1/>,<Footer2/>,<Footer3/>]}/>
+        <Route path='/about' element={[<Aboutus1/>,<Aboutus2/>,<Aboutus3/>,<Aboutus4/>,]}/>
       </Routes>
 
     
-
+<Footer />
     </Router>
+    
   );
 }
 

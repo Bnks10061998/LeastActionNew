@@ -1,4 +1,4 @@
-/* .Cont-bg {
+.Cont-bg {
   position: relative;
   padding: 40px 20px;
   min-height: 60vh;
@@ -131,10 +131,10 @@
     transform: translateY(0);
   }
 }
- */
 
 
 
+/* 
 
  .img {
   margin-left: 3.5rem;
@@ -238,4 +238,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */

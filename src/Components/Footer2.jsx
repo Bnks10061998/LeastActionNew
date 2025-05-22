@@ -86,8 +86,8 @@ function Footer2() {
                     <Link to="/">Home</Link><br /><br />
                     <Link to="/services">Services</Link><br /><br />
                     <Link to="/products">Products</Link><br /><br />
-                    <Link to="/aboutus">About Us</Link><br /><br />
-                    <Link to="/contactus">Contact Us</Link><br /><br />
+                    <Link to="/about">About Us</Link><br /><br />
+                    <Link to="/contact">Contact Us</Link><br /><br />
                 </div>
                 <div className='foot-hd3'>
                     <h2>Service</h2>
@@ -95,7 +95,8 @@ function Footer2() {
                     <Link to="/web-development">Web Development</Link><br /><br />
                     <Link to="/cloud-services">Cloud Services</Link><br /><br />
                     <Link to="/mobile-development">Mobile Development</Link><br /><br />
-                    <Link to="/ai-ml-services">AI & ML Services</Link><br /><br />
+                    <Link to="/AI & ML Services">AI & ML Services</Link><br /><br />
+                    <Link to="/IT-support">IT Support and Maintenance</Link><br /><br />
                 </div>
                 <div className='foot-hd3'>
                     <h2>Help</h2>
