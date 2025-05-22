@@ -2,8 +2,8 @@ import React from 'react';
 import './Clients1.css';
 
 import light from '../../assets/Clients/lightimg.svg'
-import heroSection from '../../assets/Clients/hero section.svg';
-import heroAsset from '../../assets/Clients/hero section asset.svg';
+import heroSection from '../../assets/Clients/Hero section.svg';
+import heroAsset from '../../assets/Clients/Hero section asset.svg';
 import codebracket from '../../assets/Clients/codebracket.svg';
 
 
