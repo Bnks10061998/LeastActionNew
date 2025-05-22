@@ -22,8 +22,8 @@ import wds2 from '../../assets/Clients/wds2.jpeg';
 import wds3 from '../../assets/Clients/wds3.jpeg';
 import wds4 from '../../assets/Clients/wds4.jpeg';
 
-import static1 from '../../assets/Clients/Staticwebsite1.jpeg';
-import static2 from '../../assets/Clients/Staticwebsite2.jpeg';
+import static1 from '../../assets/Clients/StaticWebsite1.jpeg';
+import static2 from '../../assets/Clients/StaticWebsite2.jpeg';
 
 import ecommerce1 from '../../assets/Clients/ECommerce1.jpeg';
 import ecommerce2 from '../../assets/Clients/ECommerce2.jpeg';
