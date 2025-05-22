@@ -22,25 +22,25 @@ import wds2 from '../../assets/Clients/wds2.jpeg';
 import wds3 from '../../assets/Clients/wds3.jpeg';
 import wds4 from '../../assets/Clients/wds4.jpeg';
 
-import static1 from '../../assets/Clients/staticwebsite1.jpeg';
-import static2 from '../../assets/Clients/staticwebsite2.jpeg';
+import static1 from '../../assets/Clients/Staticwebsite1.jpeg';
+import static2 from '../../assets/Clients/Staticwebsite2.jpeg';
 
-import ecommerce1 from '../../assets/Clients/ecommerce1.jpeg';
-import ecommerce2 from '../../assets/Clients/ecommerce2.jpeg';
-import ecommerce3 from '../../assets/Clients/ecommerce3.jpeg';
+import ecommerce1 from '../../assets/Clients/ECommerce1.jpeg';
+import ecommerce2 from '../../assets/Clients/ECommerce2.jpeg';
+import ecommerce3 from '../../assets/Clients/ECommerce3.jpeg';
 
-import website1 from '../../assets/Clients/website1.jpg';
-import website2 from '../../assets/Clients/website2.jpg';
-import website3 from '../../assets/Clients/website3.jpg';
-import website4 from '../../assets/Clients/website4.jpg';
-import website5 from '../../assets/Clients/website5.jpg';
+import website1 from '../../assets/Clients/Website1.jpg';
+import website2 from '../../assets/Clients/Website2.jpg';
+import website3 from '../../assets/Clients/Website3.jpg';
+import website4 from '../../assets/Clients/Website4.jpg';
+import website5 from '../../assets/Clients/Website5.jpg';
 
-import portfolio1 from '../../assets/Clients/portfolio1.jpg';
-import portfolio2 from '../../assets/Clients/portfolio2.jpg';
-import portfolio3 from '../../assets/Clients/portfolio3.jpg';
-import portfolio4 from '../../assets/Clients/portfolio4.jpg';
-import portfolio5 from '../../assets/Clients/portfolio5.jpg';
-import portfolio6 from '../../assets/Clients/portfolio6.jpg';
+import portfolio1 from '../../assets/Clients/Portfolio1.jpg';
+import portfolio2 from '../../assets/Clients/Portfolio2.jpg';
+import portfolio3 from '../../assets/Clients/Portfolio3.jpg';
+import portfolio4 from '../../assets/Clients/Portfolio4.jpg';
+import portfolio5 from '../../assets/Clients/Portfolio5.jpg';
+import portfolio6 from '../../assets/Clients/Portfolio6.jpg';
 
 const tabs = [
   'Logo',
