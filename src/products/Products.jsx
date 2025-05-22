@@ -1,5 +1,5 @@
 import React from 'react'
-import Products1 from './routes/Products1'  
+import Products1 from './routes/products1'  
 import Products2 from './routes/products2'
 import Products3 from './routes/products3'
 import Products4 from './routes/products4'
