@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const Section2 = () => {
+const Webdesign2 = () => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { triggerOnce: false });
@@ -149,4 +149,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default Webdesign2;

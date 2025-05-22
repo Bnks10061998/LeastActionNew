@@ -58,7 +58,7 @@ const cardVariant = {
   }
 };
 
-const Section3 = () => {
+const Webdesign3 = () => {
   return (
     <div className="px-6 md:px-20 py-12">
       <h2 className="text-2xl md:text-4xl font-semibold text-center mb-20">
@@ -102,4 +102,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default Webdesign3;

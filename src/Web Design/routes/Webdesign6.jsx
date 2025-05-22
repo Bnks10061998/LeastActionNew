@@ -48,7 +48,7 @@ const testimonials = [
   },
 ];
 
-const Section6 = () => {
+const Webdesign6 = () => {
   const sliderRef = useRef(null);
 
   const settings = {
@@ -137,4 +137,4 @@ const Section6 = () => {
   );
 };
 
-export default Section6;
+export default Webdesign6;

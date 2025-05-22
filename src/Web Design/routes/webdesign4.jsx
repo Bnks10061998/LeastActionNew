@@ -8,7 +8,7 @@ import {
   Clock
 } from 'lucide-react';
 
-const Section4 = () => {
+const Webdesign4 = () => {
   const features = [
     {
       icon: <Users className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
@@ -57,4 +57,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Webdesign4;

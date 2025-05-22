@@ -4,7 +4,7 @@ import heroSection4 from '../../assets/UIUX Design/Hero section 4.svg';
 import heroAsset1 from '../../assets/UIUX Design/Hero section asset 1.svg';
 import lightImg from "../../assets/UIUX Design/lightimg.svg";
 
-const Section1 = () => {
+const Webdesign1 = () => {
   return (
     <div className="bg-[url('/src/assets/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
 
@@ -56,4 +56,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Webdesign1;

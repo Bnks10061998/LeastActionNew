@@ -1,7 +1,7 @@
 import React from 'react';
 import yellowbg from '../../assets/UIUX Design/workwith-bg.webp'; 
 
-const Section7 = () => {
+const Webdesign7 = () => {
   // Debug: check the image path
   console.log("Background image path:", yellowbg);
 
@@ -41,4 +41,4 @@ const Section7 = () => {
   );
 };
 
-export default Section7;
+export default Webdesign7;
