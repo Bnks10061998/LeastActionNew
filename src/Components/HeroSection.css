@@ -1,4 +1,4 @@
-.hero-sec-top-pad {
+/* .hero-sec-top-pad {
   padding-top: 60px;
   background-color: rgba(0, 0, 128, 0.1);
 }
@@ -170,5 +170,226 @@
 
   50% {
     transform: translateY(-10px);
+  }
+} */
+
+
+
+.hero-sec-top-pad {
+  padding-top: 60px;
+  background-color: rgba(0, 0, 128, 0.1);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.elv-bus-anime {
+  transition: all 0.5s ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.02);
+}
+
+.dis-flx {
+  display: flex;
+}
+
+.flx-cols {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.cont-wid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-pad-bot {
+  padding-bottom: 50px;
+}
+
+.mission-gap {
+  gap: 60px;
+}
+
+.mob-col-flx {
+  flex-wrap: wrap;
+}
+
+.hero-conts-wid {
+  flex: 1;
+  padding: 20px;
+}
+
+.mob-center-align {
+  text-align: left;
+}
+
+.elevate-txt {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.software-txt {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+.inovative {
+  color: navy;
+}
+
+.mision-cont {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+}
+
+.space-evenly {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.bg-btn {
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bg-btn:hover {
+  background-color: navy;
+}
+
+.pos-rel {
+  position: relative;
+  flex: 1;
+  padding: 20px;
+}
+
+.mission-img {
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 25px 45px rgba(0, 0, 0.35, 0.35);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-img:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
+}
+
+.mis-img {
+  position: absolute;
+  width: 80px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.mis-top-left {
+  top: 0;
+  left: 0;
+}
+
+.mis-top-right {
+  top: 0;
+  right: 0;
+}
+
+.mis-bot-left {
+  bottom: 0;
+  left: 0;
+}
+
+.mis-bot-right {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 🌐 Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .dis-flx {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mob-center-align {
+    text-align: center;
+  }
+
+  .hero-conts-wid {
+    padding: 10px;
+  }
+
+  .software-txt {
+    font-size: 24px;
+  }
+
+  .elevate-txt {
+    font-size: 18px;
+  }
+
+  .mision-cont {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .mission-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px;
+    border-radius: 10px !important;
+  }
+
+  .space-evenly {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bg-btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .mis-img {
+    width: 50px;
   }
 }

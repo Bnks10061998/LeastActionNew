@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './HeroSection.css';
 import img from './heroimg.jpg';
 
@@ -22,7 +22,6 @@ const HeroSection = () => {
             <a className="txt-decor-none bg-btn" href="http://kosuketechnologies.com/our-portfolio">Our Clients</a>
           </span>
         </div>
-
         <div className="pos-rel">
           <img src="http://kosuketechnologies.com/assets/img/Hero section asset 1.svg" className="mis-top-left img-fluid mis-img" alt="" />
           <img src="http://kosuketechnologies.com/assets/img/Hero section asset 2.svg" className="mis-top-right img-fluid mis-img" alt="" />
@@ -34,5 +33,4 @@ const HeroSection = () => {
     </div>
   );
 };
-
 export default HeroSection;
