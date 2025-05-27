@@ -133,30 +133,6 @@ const Header = () => {
             )}
           </AnimatePresence>
         </div>
-
-          {/* <div className="relative">
-            <button
-              onClick={toggleSearch}
-              className="text-gray-600 hover:text-blue-900 transition"
-              aria-label="Search"
-            >
-              <Search className="w-5 h-5" />
-            </button>
-            <AnimatePresence>
-              {isSearchOpen && (
-                <motion.input
-                  type="text"
-                  placeholder="Search..."
-                  autoFocus
-                  className="absolute right-0 mt-2 p-2 border border-gray-300 rounded-md shadow-sm w-64"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.2 }}
-                />
-              )}
-            </AnimatePresence>
-          </div> */}
         </nav>
 
         {/* Mobile Menu Toggle */}
