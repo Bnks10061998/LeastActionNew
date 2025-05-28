@@ -10,6 +10,8 @@ const Header = () => {
 
   const dropdownRef = useRef();
   const mobileMenuRef = useRef();
+  const toggleButtonRef = useRef();
+
 
   const toggleDropdown = () => setIsDropdownOpen(prev => !prev);
   const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
@@ -22,16 +24,15 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(e.target)
-      ) {
-        closeAllMenus();
-      }
-    };
+  const handleClickOutside = (e) => {
+  if (
+    !dropdownRef.current?.contains(e.target) &&
+    !mobileMenuRef.current?.contains(e.target) &&
+    !toggleButtonRef.current?.contains(e.target)
+  ) {
+    closeAllMenus();
+  }
+};
 
     const handleEsc = (e) => {
       if (e.key === 'Escape') closeAllMenus();
@@ -54,7 +55,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
       {/* <div className="flex justify-between items-center px-6 py-3"> */}
-      <div className="flex items-center px-4 py-3">
+      <div className="flex items-center px-4 py-3 justify-between md:justify-start">
 
         {/* Logo */}
         <div className="flex items-center gap-4 text-blue-900 text-2xl font-bold">
@@ -160,13 +161,14 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <button
-          className="lg:hidden text-3xl text-gray-800 z-50"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? '✕' : '☰'}
-        </button>
+       <button
+  ref={toggleButtonRef}
+  className="lg:hidden text-3xl text-gray-800 z-50"
+  onClick={toggleMobileMenu}
+  aria-label="Toggle menu"
+>
+  {isMobileMenuOpen ? '✕' : '☰'}
+</button>
       </div>
 
       {/* Mobile Nav Menu */}
