@@ -162,30 +162,30 @@
   text-align: start;
   line-height: 1.6;
 }
-
-.abt-box{
+.abt-box {
   padding: 60px 87px;
   margin-bottom: -50px;
 }
 
-.abt-yelbox{
+.abt-yelbox {
   background-image: url("http://kosuketechnologies.com/assets/img/wannatalk-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-clip-margin: content-box;
   overflow: clip;
   padding: 6rem 0;
   border-radius: 58px;
+  text-align: center;
 }
 
-.abt-yelbox h1{
+.abt-yelbox h1 {
   margin-top: -5px;
   font-size: 4.5rem;
   font-weight: 549.8;
   color: #1f2561;
+  padding: 0 1rem;
 }
 
-.abt-lstbtn{
+.abt-lstbtn {
   background-color: #1f2561;
   color: white;
   border-radius: 28px;
@@ -193,10 +193,38 @@
   padding: 10px 30px;
   font-size: 1.3rem;
   font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.abt-lstbtn:hover{
+
+.abt-lstbtn:hover {
   background-color: white;
   color: #1f2561;
+}
+
+/* === Responsive for screens less than 768px (mobile) === */
+@media (max-width: 768px) {
+  .abt-box {
+    padding: 30px 20px;
+    margin-bottom: -20px;
+  }
+
+  .abt-yelbox {
+    padding: 3rem 1rem;
+    border-radius: 30px;
+  }
+
+  .abt-yelbox h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 0;
+  }
+
+  .abt-lstbtn {
+    font-size: 1rem;
+    margin-top: 30px;
+    padding: 8px 20px;
+  }
 }
 
 .core-values-section {

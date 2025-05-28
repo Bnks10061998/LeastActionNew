@@ -380,12 +380,12 @@
   }
 
   .space-evenly {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
   }
 
   .bg-btn {
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
   }
 

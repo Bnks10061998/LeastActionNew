@@ -3,7 +3,7 @@ import './Aboutus3.css'
 
 function Aboutus3() {
   return (
-    <div className='abt-libg'>
+    <div className='abt-libg  mt-0'>
         <div class="row">
         <div class="col-md-6 txt1">
             <h2>Our Mission</h2>
@@ -15,9 +15,9 @@ function Aboutus3() {
                 </ul>
             </div>
         </div>
-        <div class="col-md-6 img1">
-            <img src='http://kosuketechnologies.com/assets/img/mission.svg'/>
-        </div>
+            <div class="col-md-6 img1">
+                <img src='http://kosuketechnologies.com/assets/img/mission.svg'/>
+            </div>
         </div>
         <div class="row">
         <div class="col-md-6 img2">

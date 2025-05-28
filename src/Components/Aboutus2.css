@@ -139,7 +139,6 @@
 } */
 
 
-
 .img {
   margin-left: 3.5rem;
   margin-top: 60px;
@@ -163,15 +162,57 @@
 
 .txt h2 {
   padding: 7px 0px;
+  font-size: 28px;
 }
 
 .txt p {
   color: gray;
   font-size: 20px;
+  line-height: 1.6;
 }
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  
+  .row {
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    
+  }
+
+  .img {
+    margin: 0 auto 30px;
+    padding: 0 1rem;
+  }
+
+  .img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .txt {
+    margin: 0;
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .txt h2 {
+    font-size: 22px;
+  }
+
+  .txt p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 
 .abt-bt {
   margin-left: 5.4rem;
+  padding: 2rem 1rem;
 }
 
 .abt-bt h1 {
@@ -184,13 +225,8 @@
   font-size: 22px;
   color: gray;
   text-align: center;
-}
-
-.abt-bt p1 {
-  display: block;
-  font-size: 18px;
-  color: #777;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .count {
@@ -200,7 +236,13 @@
   margin-top: 40px;
   text-align: center;
   padding: 0px 100px;
-  
+  gap: 2rem;
+}
+
+.count-item {
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .count span {
@@ -227,6 +269,49 @@
   margin: 10px auto 0;
   color: #666;
 }
+
+
+/* ===== Responsive for mobile (screens <= 768px) ===== */
+@media (max-width: 768px) {
+  .abt-bt {
+    margin-left: 0;
+    padding: 1.5rem 1rem;
+  }
+
+  .abt-bt h1 {
+    font-size: 1.8rem;
+  }
+
+  .abt-bt p {
+    font-size: 16px;
+    padding: 0 0.5rem;
+  }
+
+  .count {
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .count-item {
+    margin-bottom: 2rem;
+  }
+
+  .count span {
+    font-size: 40px;
+  }
+
+  .count span::after {
+    width: 20px;
+    height: 20px;
+    left: 2.8rem;
+  }
+
+  .count p {
+    font-size: 16px;
+  }
+}
+
 
 .Aboutus-bg {
   animation: fadeIn 1s ease-in;
