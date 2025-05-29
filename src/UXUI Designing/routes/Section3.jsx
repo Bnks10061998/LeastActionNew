@@ -74,7 +74,7 @@ const Section3 = () => {
               <div className="mt-[-40px] text-[80px] bg-white text-sky-500 mx-auto">.</div>
             </div>
           </div>
-        ))}
+        ))} 
         <div className="absolute top-3 left-0 w-full h-0.5 bg-sky-500 z-0"></div>
       </div>
 

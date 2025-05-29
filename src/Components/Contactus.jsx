@@ -48,15 +48,15 @@ function Contactus() {
       <p>
         Connect with Us to <span><b> Drive </b></span> Your <br /><br /><span><b> Success </b></span>
       </p><br /><br />
-      <p1>
+      <p>
         We offer personalized solutions tailored to your business goals. Whether you <br />
         need support or want to explore collaboration, our team is ready to assist. <br />
         Contact us today to elevate your web presence.
-      </p1>
-      <div class="icon-container">
+      </p>
+      <div className="icon-container">
         <img className='whatsapp' src="https://kosuketechnologies.com/assets/img/watsapp.svg" alt="WhatsApp" />
         <img className='insta' src="https://kosuketechnologies.com/assets/img/instagramhero.svg" alt="Instagram" />
-        <img className='phone' src="http://kosuketechnologies.com/assets/img/phonehero.svg" alt="Phone" />
+        <img className='phone opacity-80 ' src="http://kosuketechnologies.com/assets/img/phonehero.svg" alt="Phone" />
         <img className='mail' src="https://kosuketechnologies.com/assets/img/mailhero.svg" alt="Mail" />
         <img className='twitter' src="https://kosuketechnologies.com/assets/img/twitterold.svg" alt="Twitter" />
         <img className='message' src="https://kosuketechnologies.com/assets/img/messagehero.svg" alt="Message" />

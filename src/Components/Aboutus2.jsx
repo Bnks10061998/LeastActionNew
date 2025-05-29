@@ -99,7 +99,6 @@ function Aboutus2() {
               <p>Total clients who love <br /> HighTech</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

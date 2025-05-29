@@ -7,9 +7,8 @@ import lightImg from "../../assets/UIUX Design/lightimg.svg";
 const Section1 = () => {
   return (
     <div className="bg-[url('/src/assets/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
-
       {/* Light image - adjusted for both mobile and desktop */}
-      <img 
+      <img
         src={lightImg} 
         alt="Light Bulb" 
         className="absolute top-10 right-5 w-10 md:top-15 md:right-20 md:w-15" 
@@ -37,11 +36,11 @@ const Section1 = () => {
         alt="Asset 1" 
         className="absolute top-10 left-5 w-20 md:top-20 md:left-20 md:w-35 drop-shadow-xl" 
       />
-      {/* <img 
-        src={heroSection4} 
-        alt="Asset 4" 
-        className="hidden md:block absolute ml-10px md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
-      /> */}
+        {/* <img 
+          src={heroSection4} 
+          alt="Asset 4" 
+          className="hidden md:block absolute ml-10px md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
+        /> */}
       <img
         src={heroSection4}
         alt="Asset 4"
