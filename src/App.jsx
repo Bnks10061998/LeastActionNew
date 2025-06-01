@@ -28,7 +28,11 @@ import Aboutus3 from './Components/Aboutus3';
 import Aboutus4 from './Components/Aboutus4';
 import Footer from './Components/wraper/Footer';
 import WhyChooseUs from './Components/WhyChooseUs';
+import TechStack from './Components/TechStack';
+// import CEOFounder from './Components/CEOFounder';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Investors from './Components/Investors';
 
 function App() {
   return (
@@ -38,10 +42,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<><HeroSection /><AboutUs2 /><Services /><WhyChooseUs/><Contact /></>} />
-        <Route path="/clients" element={<Clients />} />
+        <Route path="/techstack" element={<TechStack />} />
         <Route path="/itsupportmaintenance" element={<Digitalmarketing />} />
         <Route path="/mobile-development" element={<Mobiledevelopement />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/investor" element={<Investors />} />
         <Route path="/ui-ux-designing" element={<Uiux />} />
         {/* AI and ML  */}
         <Route path="/aiml" element={<Webdesign />} />

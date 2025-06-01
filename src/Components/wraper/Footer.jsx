@@ -7,7 +7,7 @@ const Footer = () => {
   const menus = [
     { label: "Home", path: "/" },
     { label: "Services", path: "/services" },
-    { label: "Products", path: "/products" },
+    // { label: "Products", path: "/products" },
     { label: "About Us", path: "/about" },
     { label: "Contact Us", path: "/contact" }
   ];
@@ -15,10 +15,10 @@ const Footer = () => {
   const services = [
     { label: "UI UX Designing", path: "/ui-ux-designing" },
     { label: "Web Development", path: "/web-development" },
-    { label: "Cloud Services", path: "/cloud" },
-    { label: "Mobile Development", path: "/mobile" },
-    { label: "AI & ML Services", path: "/ai-ml" },
-    { label: "IT Support and Maintenance", path: "/it-support" }
+    { label: "Cloud Services", path: "/cloudservices" },
+    { label: "Mobile Development", path: "/mobile-development" },
+    { label: "AI & ML Services", path: "/aiml" },
+    { label: "IT Support and Maintenance", path: "/itsupportmaintenance" }
   ];
 
   const help = [
@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#1B2268] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
         {/* Logo and Address */}
         <div className="md:col-span-2">
           <div className="flex items-center space-x-3 mb-4">
@@ -67,7 +67,7 @@ const Footer = () => {
 
         {/* Services */}
         <div  className="ml-18">
-          <h2 className="text-2xl font-semibold mb-4">Service</h2>
+          <h2 className="text-2xl font-semibold mb-4">Services</h2>
           <ul className="space-y-6 text-sm pl-0">
             {services.map((item, idx) => (
               <li key={idx}>
