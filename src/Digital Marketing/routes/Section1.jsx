@@ -4,7 +4,7 @@ import codeBracket from '../../assets/Digital Marketing/codebracket.svg'
 import heroSection4 from '../../assets/Digital Marketing/Hero section 4.svg';
 import heroAsset1 from '../../assets/Digital Marketing/Hero section asset 1.svg';
 import lightImg from "../../assets/Digital Marketing/lightimg.svg";
-
+import { Link } from 'react-router-dom';
 const Section1 = () => {
   return (
     // <div className="bg-[url('../../assets/Digital Marketing/abtus-hero.svg')] bg-cover bg-center min-h-[70vh] md:min-h-screen w-full flex flex-col items-center px-4 text-center relative overflow-hidden">
@@ -27,9 +27,15 @@ const Section1 = () => {
         <p className="text-md md:text-2xl text-gray-600 mt-4 leading-relaxed md:leading-loose md:ml-10 mb-8 md:mb-10">
          At Least Action, we create comprehensive digital marketing strategies that elevate your brand, focusing on innovation and data-driven approaches in SEO, content marketing, and social media to boost your online visibility.
         </p>
-        <button className="!mt-4 !md:mt-6 !px-8 !md:px-10 !py-2 !bg-[#1B2268] !text-white !rounded-full !shadow-lg hover:!bg-white hover:!text-[#1B2268] hover:!border hover:!border-[#1B2268] hover:!shadow-xl hover:!scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl">
+        {/* <button className="!mt-4 !md:mt-6 !px-8 !md:px-10 !py-2 !bg-[#1B2268] !text-white !rounded-full !shadow-lg hover:!bg-white hover:!text-[#1B2268] hover:!border hover:!border-[#1B2268] hover:!shadow-xl hover:!scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl">
   Contact our expert
-</button>
+</button> */}
+<Link
+  to="/contact"
+  className="!mt-4 !md:mt-6 !px-8 !md:px-10 !py-2 !bg-[#1B2268] !text-white !rounded-full !shadow-lg hover:!bg-white hover:!text-[#1B2268] hover:!border hover:!border-[#1B2268] hover:!shadow-xl hover:!scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl"
+>
+  Contact our expert
+</Link>
       </div>
 
       
