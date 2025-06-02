@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {
   Users,
@@ -42,11 +43,12 @@ const Section4 = () => {
       <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
         Why Least Action as Your IT Support and Maintenance Company
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-10 justify-items-center">
         {features.map((feature, index) => (
+          
           <div
             key={index}
-            className="group flex items-center gap-3 p-5 w-full md:w-[700px] border border-gray-400 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
+            className="group flex items-center gap-3 p-5 w-full md:w-[500px] md:h-[25px] border border-gray-400 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
           >
             {feature.icon}
             <p className="text-xl md:text-2xl transition-colors">{feature.text}</p>
