@@ -67,11 +67,11 @@ function Aboutus2() {
   return (
     <div className='Aboutus-bg'>
       <div className='Aboutus-hd'>
-        <div class="row">
-          <div class="col-md-6 img">
+        <div className="row">
+          <div className="col-md-6 img">
             <img src='http://kosuketechnologies.com/assets/img/abtus-img.svg' />
           </div>
-          <div class="col-md-6 txt">
+          <div className="col-md-6 txt">
             <h3>About Us</h3>
             <h2>Least Action Delivers Strategic Innovation <br /> for Your Success</h2>
             <p>Least Action Pvt Ltd, a young and creative web design and <br /> development company, offers a wide range of services in both <br />
