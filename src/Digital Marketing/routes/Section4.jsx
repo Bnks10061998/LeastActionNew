@@ -265,27 +265,27 @@ import {
 const Section4 = () => {
   const features = [
     {
-      icon: <Users className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <Users className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "Creative & Motivated Teams",
     },
     {
-      icon: <Briefcase className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <Briefcase className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "We Align with Business Goals",
     },
     {
-      icon: <ShieldCheck className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <ShieldCheck className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "Quality & Security Adherence",
     },
     {
-      icon: <Lightbulb className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <Lightbulb className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "Your Ideas Are Safe With Us",
     },
     {
-      icon: <Timer className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <Timer className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "Timely Solutions",
     },
     {
-      icon: <Clock className="w-4 h-4 text-black group-hover:text-white transition-colors" />,
+      icon: <Clock className="w-6 h-6 text-black group-hover:text-white transition-colors" />,
       text: "Seamless Support",
     },
   ];
@@ -301,10 +301,10 @@ const Section4 = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="group flex text-center items-center justify-center gap-3 px-4 py-4 w-full border border-gray-300 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
+            className="group flex  text-center items-center justify-center gap-3 px-4 py-8 w-full border border-gray-300 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
           >
-            {feature.icon}
-            <p className="text-sm text-center items-center mb-0 justify-center sm:text-base transition-colors">{feature.text}</p>
+            <span className=''>{feature.icon}</span>
+            <p className="lg:text-2xl md:text-xl text-center items-center mb-0 justify-center sm:text-base transition-colors">{feature.text}</p>
           </div>
         ))}
       </div>

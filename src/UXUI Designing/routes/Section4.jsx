@@ -44,12 +44,12 @@ const Section4 = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {features.map((feature, index) => (
-          <div
+           <div
             key={index}
-            className="group flex items-center gap-3 p-5 w-full md:w-[700px] border border-gray-400 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
+            className="group flex  text-center items-center justify-center gap-3 px-4 py-8 w-full border border-gray-300 rounded-md shadow-sm hover:shadow-md transition hover:bg-sky-500 hover:text-white"
           >
-            {feature.icon}
-            <p className="text-xl md:text-2xl transition-colors">{feature.text}</p>
+            <span className=''>{feature.icon}</span>
+            <p className="lg:text-2xl md:text-xl text-center items-center mb-0 justify-center sm:text-base transition-colors">{feature.text}</p>
           </div>
         ))}
       </div>

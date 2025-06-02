@@ -90,7 +90,7 @@ const Header = () => {
             <AnimatePresence>
               {isDropdownOpen && (
                 <motion.div
-                  className="absolute bg-white shadow-xl mt-3 w-[236px] rounded-xl border border-gray-200 px-0 py-1 flex flex-col z-50"
+                  className="absolute bg-white shadow-xl mt-3 w-[246px] rounded-xl border border-gray-200 px-0 py-1 flex flex-col z-50"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -120,7 +120,7 @@ const Header = () => {
    <Link
   to={href}
   onClick={closeAllMenus}
-  className={`w-full block text-center px-4 py-2  text-gray-800 hover:bg-blue-100 hover:text-blue-600 transition duration-200 ${
+  className={`w-full block text-start px-3 py-2  text-gray-800 hover:bg-blue-100 hover:text-blue-600 transition duration-200 ${
     currentPath === href ? 'bg-blue-100 text-blue-600 font-semibold' : ''
   }`}
 >
