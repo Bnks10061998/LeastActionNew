@@ -85,7 +85,11 @@ function Contactus2() {
                       className="form-control py-3"
                       required
                       onChange={handleChange} name='message' /><br />
-          <button type='submit' className='ct-btn w-1/3 mx-auto'>Submit</button><br/><br/>
+          {/* <button type='submit' className='ct-btn w-1/3 mx-auto'>Submit</button><br/><br/> */}
+          <button type="submit" className="ct-btn w-full sm:w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
+  Submit
+</button>
+
           </form>
           <p>By signing up, you agree to our Terms and Conditions</p>
         </div>
