@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     
     <div
-        className="container-fluid hero-sec-top-pad fade-in elv-bus-anime visible hover"
+        className="container-fluid hero-sec-top-pad fade-in elv-bus-anime visible "
         style={{
           background: 'linear-gradient(to left, rgba(0, 0, 128, 0.1), rgba(255, 255, 255, 0.9))',
           backdropFilter: 'blur(4px)',

@@ -631,6 +631,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import img from '../assets/LA Logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -677,12 +678,13 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 shadow-md transition-all duration-300"
+      className="sticky top-0 z-50 shadow-md transition-all duration-300 py-2"
       style={{
         background: 'linear-gradient(to left, rgb(212, 212, 233), #ffffff)',
       }}
     >
-      <div className="flex items-center px-4 md:px-4 lg:px-8 py-0">
+     <div className="flex items-center justify-between gap-5 w-full max-w-7xl mx-auto px-4 lg:px-8">
+
         {/* Logo */}
         <div className="flex items-center gap-1 text-blue-900 text-2xl font-bold">
           <img src={img} alt="Least Action Logo" className="w-14 h-14" />
@@ -690,9 +692,9 @@ const Header = () => {
         </div>
 
         {/* Desktop/Tablet Nav */}
-        <nav className="hidden md:flex items-center ml-[350px]  gap-4 lg:gap-8 text-gray-800 font-medium">
-          <a href="/" className="hover:text-blue-900 text-lg font-bold transition">Home</a>
-          <a href="/about" className="hover:text-blue-900 text-lg font-bold transition">About Us</a>
+        <nav className="hidden md:flex justify-center flex-grow items-center lg:text-lg text-3xl md:gap-4 text-center lg:gap-8 text-gray-800 font-medium">
+          <Link to="/" className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Home</Link>
+          <Link to="/about" className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">About Us</Link>
 
           <div
             className="relative"
@@ -700,8 +702,8 @@ const Header = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-blue-900 text-lg font-bold transition focus:outline-none">
-              Services <span className="text-[14px]">▼</span>
+            <button className="hover:text-blue-900 md:text-base md:pb-2 lg:pb-0 lg:text-lg font-bold transition focus:outline-none">
+              Services <span className="lg:text-[14px] md:text-[10px] ">▼</span>
             </button>
             <AnimatePresence>
               {isDropdownOpen && (
@@ -747,9 +749,9 @@ const Header = () => {
             </AnimatePresence>
           </div>
 
-          <a href="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 text-lg font-bold transition">Tech Stack</a>
-          <a href="/investor" onClick={closeAllMenus} className="hover:text-blue-900 text-lg font-bold transition">Investor Relations</a>
-          <a href="/contact" className="hover:text-blue-900 text-lg font-bold transition">Contact Us</a>
+          <a href="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Tech Stack</a>
+          <a href="/investor" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Investor Relations</a>
+          <a href="/contact" className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Contact Us</a>
         </nav>
 
         {/* Mobile Toggle Button */}
@@ -767,8 +769,9 @@ const Header = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            ref={mobileMenuRef}
-            className="md:hidden flex flex-col gap-4 bg-white px-6 pb-4 text-gray-800 font-medium z-40"
+          ref={mobileMenuRef}
+  className="fixed top-16 left-0 right-0 bg-white md:hidden flex flex-col gap-4 px-6 pb-4 z-40"
+  
             initial="hidden"
             animate="visible"
             exit="exit"
