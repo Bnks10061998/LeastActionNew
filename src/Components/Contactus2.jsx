@@ -1,17 +1,51 @@
 import React, { useState } from 'react';
 import './Contactus2.css';
+import { useFormik } from "formik";
+import emailjs from "@emailjs/browser";
+import { SERVICE_ID,TEMPLATE_ID, PUBLIC_KEY } from "../../utils/config";
 
 function Contactus2() {
-  const [data, setData] = useState({fullname: '',email: '',companyname: '',phonenumber: '',country: '',message: ''});
+  // const [data, setData] = useState({fullname: '',email: '',companyname: '',phonenumber: '',country: '',message: ''});
 
-  function change(e) {
-    setData({ ...data, [e.target.name]: e.target.value });
-  }
+  // function change(e) {
+  //   setData({ ...data, [e.target.name]: e.target.value });
+  // }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(data);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   console.log(data);
+  // }
+
+// console.log(SERVICE_ID);
+
+   const onSubmit = async (values, actions) => {
+    console.log(values);
+    
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        values,
+        PUBLIC_KEY,
+      );
+      alert("Message sent successfully!");
+      actions.resetForm()
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const { values, handleChange,errors, handleSubmit } = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      phoneNumber:"",
+      country: '',
+      companyName: '',
+      message: "",
+    },
+    onSubmit,
+  });
 
   return (
     <div className='ct-hd'>
@@ -21,20 +55,38 @@ function Contactus2() {
         <div className='ct-formbg'>
           <form className='ct-form' onSubmit={handleSubmit}>
             <h3>Contact us</h3>
-            <input type='text' placeholder='Full Name' value={data.fullname} onChange={change} name='fullname' required /><br />
-            <input type='email' placeholder='Email address' value={data.email} onChange={change} name='email' required /><br />
-            <input type='text' placeholder='Company Name' value={data.companyname} onChange={change} name='companyname' required /><br />
-            <input type='text' placeholder='Phone number' value={data.phonenumber} onChange={change} name='phonenumber' required /><br />
-            <select name='country' value={data.country} onChange={change} required>
+            <input type='text' placeholder='Full Name' name='fullName' required
+                      id="fullName"
+                      onChange={ handleChange}
+                      value={values.fullName} /><br />
+            <input type='email' placeholder='Email address'  required
+                      id="email"
+                      onChange={ handleChange}
+                      aria-describedby="emailHelp"
+                      value={values.email} name='email' /><br />
+            <input type='text' placeholder='Company Name' required
+                      id="companyName"
+                      onChange={ handleChange}
+                      aria-describedby="companyName"
+                      value={values.companyName}  name='companyName' /><br />
+            <input type="number" placeholder='Phone number'  id="phoneNumber"
+                      onChange={ handleChange}
+                      aria-describedby="phoneNumber"
+                      value={values.phoneNumber}  name='phoneNumber' required /><br />
+            <select name='country' value={values.country} onChange={handleChange} id="country" required>
               <option value="">Select Country</option>
               <option value="India">India</option>
               <option value="United States">United States</option>
               <option value="Australia">Australia</option>
               <option value="Dubai">Dubai</option>
             </select><br />
-            <textarea placeholder='Message' rows='4' value={data.message} onChange={change} name='message' required /><br />
+            <textarea placeholder='Message' rows='4'  id="message"
+                      value={values.message}
+                      className="form-control py-3"
+                      required
+                      onChange={handleChange} name='message' /><br />
+          <button type='submit' className='ct-btn w-1/3 mx-auto'>Submit</button><br/><br/>
           </form>
-          <button type='submit' className='ct-btn'>Submit</button><br/><br/>
           <p>By signing up, you agree to our Terms and Conditions</p>
         </div>
       </div>
