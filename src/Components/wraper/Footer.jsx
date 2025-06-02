@@ -95,7 +95,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#ffd700] text-[#1a1f60] py-1 text-center flex justify-center items-center gap-2 text-base">
+      <div className="bg-[#ffd700]/70 text-[#1a1f60] py-1 text-center flex justify-center items-center gap-2 text-base">
         <FaRegCopyright /> 2025 Least Action All right reserved.
       </div>
     </footer>

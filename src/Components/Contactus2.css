@@ -169,7 +169,7 @@
 .ct-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
   
 .ct-form h3{
@@ -204,7 +204,6 @@
   
 .ct-btn {
     padding: 11px 23px;
-    font-size: 22px;
     background-color: navy;
     color: white;
     border: none;
