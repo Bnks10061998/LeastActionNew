@@ -49,8 +49,8 @@ function Contactus2() {
 
   return (
     <div className='ct-hd'>
-      <h2>Let’s Grow Your Brand Online</h2>
-      <h1>Start A Conversation With Us</h1>
+      <h3>Let’s Grow Your Brand Online</h3>
+      <h2>Start A Conversation With Us</h2>
       <div className='ct-bg'>
         <div className='ct-formbg'>
           <form className='ct-form' onSubmit={handleSubmit}>

@@ -57,7 +57,7 @@ const Header = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-1 text-blue-900 text-2xl font-bold">
-          <img src={img} alt="Least Action Logo" className="w-14 h-14" />
+          <img src={img} alt="Least Action Logo" className="w-16 h-16" />
           <span>Least Action</span>
         </div>
 
