@@ -49,7 +49,7 @@
 
 import React from 'react';
 import yellowbg from '../../assets/UIUX Design/workwith-bg.webp';
-
+import { Link } from 'react-router-dom';
 const Section7 = () => {
   return (
     <div className="font-sans">
@@ -63,12 +63,12 @@ const Section7 = () => {
           <p className="text-base sm:text-lg mb-6">
             Least Action Pvt Ltd is a young and creative web design and development company.
           </p>
-          <a
-            href="#"
-            className="inline-block bg-sky-500 text-white text-sm sm:text-base font-semibold py-3 px-6 sm:px-8 rounded-full hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300"
+          <Link
+            to="/contact"
+            className="!inline-block !bg-sky-500 !text-white !text-base !font-semibold !py-3 !px-8 !rounded-full hover:!bg-white hover:!text-sky-500 hover:!border hover:!border-sky-500 !transition !duration-300"
           >
             Contact with Us
-          </a>
+          </Link>
         </div>
 
         {/* Image block for smaller devices */}
@@ -92,18 +92,12 @@ const Section7 = () => {
           <p className="text-2xl mb-6">
             Least Action Pvt Ltd is a young and creative web design and development company.
           </p>
-          {/* <a
-            href="#"
-            className="inline-block bg-sky-500 text-white text-base font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300"
-          >
-            Contact with Us
-          </a> */}
-          <a
-  href="#"
+         <Link
+  to="/contact"
   className="!inline-block !bg-sky-500 !text-white !text-base !font-semibold !py-3 !px-8 !rounded-full hover:!bg-white hover:!text-sky-500 hover:!border hover:!border-sky-500 !transition !duration-300"
 >
   Contact with Us
-</a>
+</Link>
         </div>
       </section>
     </div>

@@ -1,155 +1,48 @@
-/* .aboutus2-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  animation: fadeIn 1s ease-in;
+
+ /* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.aboutus2-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.aboutus2-images {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.image-row {
-  display: flex;
-  gap: 20px;
-}
-
-.bottom-row {
-  justify-content: flex-start;
-}
-
-.rounded-image {
-  border-radius: 30px;
-  object-fit: cover;
-  width: 180px;
-  height: 180px;
-}
-
-.rounded-image.large {
-  width: 240px;
-  height: 240px;
-}
-
-.rounded-image.small {
-  width: 120px;
-  height: 120px;
-}
-
-.aboutus2-text {
-  max-width: 600px;
-}
-
-.aboutus2-text h4 {
-  color: navy;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.aboutus2-text h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.aboutus2-text p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.read-more-btn {
-  padding: 10px 24px;
-  border: 2px solid navy;
-  background: transparent;
-  color: navy;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.read-more-btn:hover {
-  background: navy;
-  color: white;
-}
-
-
-
-.count {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.count-item {
-  flex: 1 1 200px;
-  margin: 20px;
-  position: relative;
-}
-
-.count-item span {
-  font-size: 48px;
-  font-weight: bold;
-  color: #1c1c1c;
-  position: relative;
-}
-
-.count-item span::after {
-  content: '✨';
-  position: absolute;
-  top: -10px;
-  right: -20px;
-  font-size: 18px;
-  color: #1b1b64;
-}
-
-.count-item p {
-  margin-top: 12px;
-  font-size: 16px;
-  color: #555;
-  font-weight: 500;
-}
-
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
-
-.img {
-  margin-left: 3.5rem;
-  margin-top: 60px;
-  margin-bottom: 70px;
-}
-
+/* ===== Layout & Images ===== */
 .Aboutus-bg {
   max-width: 100%;
   overflow-x: hidden;
+  animation: fadeIn 1s ease-in;
+  padding: 1rem;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* ===== Image Section ===== */
+.img {
+  margin-left: 3.5rem;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+/* ===== Text Section ===== */
 .txt {
   margin-left: -2rem;
   font-size: 18px;
@@ -161,7 +54,7 @@
 }
 
 .txt h2 {
-  padding: 7px 0px;
+  padding: 7px 0;
   font-size: 28px;
 }
 
@@ -171,76 +64,41 @@
   line-height: 1.6;
 }
 
-/* ===== Mobile Responsive ===== */
-@media (max-width: 768px) {
-  
-  .row {
-    flex-direction: column;
-    display: flex;
-    padding: 1rem;
-    text-align: center;
-    
-  }
-
-  .img {
-    margin: 0 auto 30px;
-    padding: 0 1rem;
-  }
-
-  .img img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .txt {
-    margin: 0;
-    font-size: 16px;
-    padding: 0 1rem;
-  }
-
-  .txt h2 {
-    font-size: 22px;
-  }
-
-  .txt p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-
+/* ===== About Title Block ===== */
 .abt-bt {
-  margin-left: 5.4rem;
-  padding: 2rem 1rem;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+   margin-bottom: 30px;
+  padding: 0rem 0rem;
+  text-align: center;
 }
 
 .abt-bt h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .abt-bt p {
   font-size: 22px;
   color: gray;
-  text-align: center;
   margin: 0 auto;
   max-width: 500px;
 }
 
+/* ===== Count Section ===== */
 .count {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 40px;
   text-align: center;
-  padding: 0px 100px;
+  padding: 0 100px;
   gap: 2rem;
 }
 
 .count-item {
-  flex: 1 1 200px;
+  flex: 1 1 100px;
   min-width: 200px;
   max-width: 300px;
 }
@@ -270,12 +128,78 @@
   color: #666;
 }
 
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* ===== Responsive for mobile (screens <= 768px) ===== */
+/* ===== Responsive: Tablets & Phones ===== */
+@media (max-width: 1024px) {
+  .img {
+    margin: 0 auto 30px;
+    padding: 0 1rem;
+  }
+
+  .txt {
+    margin: 0;
+    font-size: 17px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .txt h2 {
+    font-size: 24px;
+  }
+
+  .txt p {
+    font-size: 18px;
+  }
+
+  .abt-bt h1 {
+    font-size: 2.2rem;
+  }
+
+  .abt-bt p {
+    font-size: 18px;
+  }
+
+  .count {
+    padding: 0 2rem;
+  }
+
+  .count span {
+    font-size: 50px;
+  }
+
+  .count span::after {
+    left: 3.5rem;
+    width: 22px;
+    height: 22px;
+  }
+
+  .count p {
+    font-size: 18px;
+  }
+}
+
+/* ===== Responsive: Mobile (<=768px) ===== */
 @media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+
+  }
+
   .abt-bt {
-    margin-left: 0;
-    padding: 1.5rem 1rem;
+    padding: 0rem 0rem;
   }
 
   .abt-bt h1 {
@@ -288,13 +212,13 @@
   }
 
   .count {
-    padding: 0 1rem;
     flex-direction: column;
+    padding: 0 1rem;
     align-items: center;
   }
 
   .count-item {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 
   .count span {
@@ -312,19 +236,25 @@
   }
 }
 
-
-.Aboutus-bg {
-  animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* ===== Responsive: Small Phones (<=480px) ===== */
+@media (max-width: 480px) {
+  .txt h2 {
+    font-size: 20px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .txt p {
+    font-size: 16px;
+  }
+
+  .abt-bt h1 {
+    font-size: 1.6rem;
+  }
+
+  .count span {
+    font-size: 32px;
+  }
+
+  .count p {
+    font-size: 14px;
   }
 }

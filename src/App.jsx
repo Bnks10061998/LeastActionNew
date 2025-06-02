@@ -8,7 +8,7 @@ import Contact from './Components/Contactus2';
 // import Footer1 from './Components/Footer1';
 import Footer2 from './Components/Footer2'; 
 // import Footer3 from './Components/Footer3';
-import Clients from './Clients/clients';
+// import Clients from './Clients/clients';
 import Digitalmarketing from './Digital Marketing/Digitalmarketing';
 import Mobiledevelopement from './Mobile App Development/Mobileapp';
 import Products from './products/Products';
