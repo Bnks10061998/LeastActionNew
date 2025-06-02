@@ -1,5 +1,6 @@
 import React from 'react';
 import './Aboutus2.css';
+import aboutUs from '../assets/aboutUs.svg'
 
 function Aboutus2() {
   return (
@@ -24,12 +25,12 @@ function Aboutus2() {
           </div>
         </div>
         <div class="row mb-0">
-          <div class="col-md-6 img">
-            <img src='http://kosuketechnologies.com/assets/img/abtus-img.svg' />
+          <div class="col-md-6 img ">
+            <img src={aboutUs} />
           </div>
           <div class="col-md-6 txt">
-            <h3>About Us</h3>
-            <h2>Least Action Delivers Strategic Innovation <br /> for Your Success</h2>
+            <h3 className='text-4xl mb-3'>About Us</h3>
+            <h2 className='text-3xl mb-3'>Least Action Delivers Strategic Innovation <br /> for Your Success</h2>
             <p>Least Action Pvt Ltd, a young and creative web design and <br /> development company, offers a wide range of services in both <br />
               functional and technical solutions. They interact regularly with clients, focusing on improving productivity through quality services, cost
               effective solutions, and timely project delivery. The team provides  custom web applications, API integration, and payment gateway

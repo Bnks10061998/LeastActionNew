@@ -19,7 +19,6 @@ function Contactus2() {
 // console.log(SERVICE_ID);
 
    const onSubmit = async (values, actions) => {
-    console.log(values);
     
     try {
       await emailjs.send(
@@ -49,9 +48,9 @@ function Contactus2() {
 
   return (
     <div className='ct-hd'>
-      <h3>Let’s Grow Your Brand Online</h3>
-      <h2>Start A Conversation With Us</h2>
-      <div className='ct-bg'>
+      <p className='lg:text-3xl md:text-2xl text-xl text-[#1B2268]'>Let’s Grow Your Brand Online</p>
+      <p className='lg:text-5xl font-semibold md:text-4xl text-2xl'>Start A Conversation With Us</p>
+      <div className='ct-bg'> 
         <div className='ct-formbg'>
           <form className='ct-form' onSubmit={handleSubmit}>
             <h3>Contact us</h3>
@@ -86,12 +85,11 @@ function Contactus2() {
                       required
                       onChange={handleChange} name='message' /><br />
           {/* <button type='submit' className='ct-btn w-1/3 mx-auto'>Submit</button><br/><br/> */}
-          <button type="submit" className="ct-btn w-full sm:w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
+          <button type="submit" className="ct-btn sm:w-1/4 md:w-1/2 lg:w-1/3 mx-auto">
   Submit
 </button>
 
           </form>
-          <p>By signing up, you agree to our Terms and Conditions</p>
         </div>
       </div>
     </div>
