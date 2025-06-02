@@ -53,7 +53,7 @@ const Footer = () => {
 
         {/* Menus */}
         <div className="ml-18" >
-          <h2 className="text-2xl font-semibold mb-4">Menus</h2>
+          <h2 className="text-2xl font-semibold mb-4">Menu</h2>
           <ul className="space-y-6 text-sm pl-0 ">
             {menus.map((item, idx) => (
               <li key={idx}>
