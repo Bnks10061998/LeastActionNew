@@ -25,9 +25,19 @@ const Section1 = () => {
          At Least Action, our mission is to connect with users beyond the interface. Our UI/UX team designs engaging experiences that resonate with your audience, creating intuitive interactions that meet user needs and foster lasting loyalty.
         </p>
         
-        <button className="mt-4 md:mt-6 px-8 md:px-10 py-2 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300 text-lg md:text-2xl">
+  
+        {/* <button className="mt-4 md:mt-6 px-8 md:px-10 py-2 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-[#1B2268] hover:border hover:border-[#1B2268] transition duration-300 text-lg md:text-2xl">
           Contact our expert
-        </button>
+        </button> */}
+        {/* <button className="mt-4 md:mt-6 px-8 md:px-10 py-2 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-[#1B2268] hover:border hover:border-[#1B2268] hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl">
+  Contact our expert
+</button> */}
+<button className="!mt-4 !md:mt-6 !px-8 !md:px-10 !py-2 !bg-[#1B2268] !text-white !rounded-full !shadow-lg hover:!bg-white hover:!text-[#1B2268] hover:!border hover:!border-[#1B2268] hover:!shadow-xl hover:!scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl">
+  Contact our expert
+</button>
+
+
+
       </div>
 
       {/* Floating Icons - adjusted for mobile */}
@@ -36,11 +46,7 @@ const Section1 = () => {
         alt="Asset 1" 
         className="absolute top-10 left-5 w-20 md:top-20 md:left-20 md:w-35 drop-shadow-xl" 
       />
-        {/* <img 
-          src={heroSection4} 
-          alt="Asset 4" 
-          className="hidden md:block absolute ml-10px md:top-70 md:right-35 md:w-30 drop-shadow-xl" 
-        /> */}
+      
       <img
         src={heroSection4}
         alt="Asset 4"

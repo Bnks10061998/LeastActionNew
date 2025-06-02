@@ -1,10 +1,17 @@
 
 import './HeroSection.css';
 import img from './heroimg.jpg';
-
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
-    <div className="container-fluid hero-sec-top-pad fade-in elv-bus-anime visible hover">
+    
+    <div
+        className="container-fluid hero-sec-top-pad fade-in elv-bus-anime visible hover"
+        style={{
+          background: 'linear-gradient(to left, rgba(0, 0, 128, 0.1), rgba(255, 255, 255, 0.9))',
+          backdropFilter: 'blur(4px)',
+        }}
+      >
       <div className="dis-flx align-items-center mission-gap cont-wid hero-pad-bot mob-col-flx">
         <div className="dis-flx flx-cols hero-conts-wid mob-center-align">
           <span className="elevate-txt">Elevate Your Business with Our</span>
@@ -17,10 +24,11 @@ const HeroSection = () => {
             Our team uses the latest technology to create user-friendly websites that drive your online success.
             Stay ahead with us.
           </p>
-          <span className="space-evenly ">
-            <a className="txt-decor-none bg-btn" href="http://kosuketechnologies.com/contact-us">Reach Us</a>
-            <a className="txt-decor-none bg-btn" href="http://kosuketechnologies.com/our-portfolio">Our Clients</a>
-          </span>
+          <span className="flex justify-evenly">
+          <Link to="/contact" className="no-underline bg-btn">
+            Reach Us
+          </Link>
+        </span>
         </div>
         <div className="pos-rel">
           <img src="http://kosuketechnologies.com/assets/img/Hero section asset 1.svg" className="mis-top-left img-fluid mis-img" alt="" />

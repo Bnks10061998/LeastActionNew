@@ -43,7 +43,7 @@ const servicesData = [
     title: 'UI UX Designing',
     description:
       'We are a UI/UX design company that enhances user experiences through research-driven innovation. Our services elevate your digital presence by crafting exceptional user interfaces tailored to client perspectives.',
-    link: '/ui-ux',
+    link: "/ui-ux-designing",
     imgClass: '',
   },
   {
@@ -75,7 +75,7 @@ const servicesData = [
     title: 'AI & ML Services',
     description:
       'We help businesses use AI and machine learning to solve problems and work smarter. Our services include predicting trends, understanding language, recognizing images, and automating tasks to make your business faster and better.',
-    link: '/aimlservice',
+    link: '/aiml',
     imgClass: '',
   },
   {
@@ -84,7 +84,7 @@ const servicesData = [
     title: 'IT Support and Maintenance',
     description:
       'Keep your IT infrastructure secure and running smoothly with our tailored IT Support and Maintenance services. We minimize downtime so you can focus on your core business. From troubleshooting to system upgrades, we got your IT needs covered.',
-    link: '/itsupport',
+    link: '/itsupportmaintenance',
     imgClass: '',
   },
 ];
