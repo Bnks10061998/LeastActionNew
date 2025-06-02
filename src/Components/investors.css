@@ -6,6 +6,7 @@
 
 .investors-title {
   font-size: 3rem;
+  margin-top: 30px;
   margin-bottom: 3rem;
   font-weight: 700;
 }
@@ -42,7 +43,8 @@
   padding: 5px;
   border-radius: 2em;
   backface-visibility: hidden;
-  box-shadow: 0 15px 15px rgba(6, 89, 224, 0.3);
+  /* box-shadow: 0 1px 1px rgba(27, 34, 104, 1); */
+  box-shadow: 0 1px 1px #1B2268;
 }
 
 .flip-card-front {

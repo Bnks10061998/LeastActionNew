@@ -86,9 +86,12 @@ const Section1 = () => {
           Developing high-performance, scalable web applications is easy with us. We deliver unique web solutions tailored to your business, driving more sales.
         </p>
 
-        <button className="mt-4 px-6 md:px-10 py-2 md:py-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300 text-base md:text-lg">
+        {/* <button className="mt-4 px-6 md:px-10 py-2 md:py-3 bg-sky-500 text-white rounded-full shadow-lg hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300 text-base md:text-lg">
           Contact our expert
-        </button>
+        </button> */}
+        <button className="!mt-4 !md:mt-6 !px-8 !md:px-10 !py-2 !bg-[#1B2268] !text-white !rounded-full !shadow-lg hover:!bg-white hover:!text-[#1B2268] hover:!border hover:!border-[#1B2268] hover:!shadow-xl hover:!scale-105 transition-all duration-300 ease-in-out text-lg md:text-2xl">
+  Contact our expert
+</button>
       </div>
 
       {/* Floating Icons */}

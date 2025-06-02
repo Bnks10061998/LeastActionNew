@@ -90,12 +90,18 @@ const Section7 = () => {
           <p className="text-2xl mb-6">
             Least Action Pvt Ltd is a young and creative web design and development company.
           </p>
-          <a
+          {/* <a
             href="#"
             className="inline-block bg-sky-500 text-white text-base font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-sky-500 hover:border hover:border-sky-500 transition duration-300"
           >
             Contact with Us
-          </a>
+          </a> */}
+          <a
+  href="#"
+  className="!inline-block !bg-sky-500 !text-white !text-base !font-semibold !py-3 !px-8 !rounded-full hover:!bg-white hover:!text-sky-500 hover:!border hover:!border-sky-500 !transition !duration-300"
+>
+  Contact with Us
+</a>
         </div>
       </section>
     </div>
