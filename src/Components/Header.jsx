@@ -119,9 +119,9 @@ const Header = () => {
             </AnimatePresence>
           </div>
 
-          <a href="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Tech Stack</a>
-          <a href="/investor" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Investor Relations</a>
-          <a href="/contact" className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Contact Us</a>
+          <Link to="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Tech Stack</Link>
+          <Link to="/investor" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Investor Relations</Link>
+          <Link to="/contact" onClick={closeAllMenus} className="hover:text-blue-900 md:text-base lg:text-lg font-bold transition">Contact Us</Link>
         </nav>
 
         {/* Mobile Toggle Button */}
@@ -147,8 +147,8 @@ const Header = () => {
             exit="exit"
             variants={menuVariants}
           >
-            <a href="/" onClick={closeAllMenus} className="hover:text-blue-900 transition">Home</a>
-            <a href="/about" onClick={closeAllMenus} className="hover:text-blue-900 transition">About Us</a>
+            <Link to="/" onClick={closeAllMenus} className="hover:text-blue-900 transition">Home</Link>
+            <Link to="/about" onClick={closeAllMenus} className="hover:text-blue-900 transition">About Us</Link>
 
             <div>
               <button
@@ -188,9 +188,9 @@ const Header = () => {
               </AnimatePresence>
             </div>
 
-            <a href="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 transition">Tech Stack</a>
-            <a href="/investor" onClick={closeAllMenus} className="hover:text-blue-900 transition">Investor Relations</a>
-            <a href="/contact" onClick={closeAllMenus} className="hover:text-blue-900 transition">Contact Us</a>
+            <Link to="/techstack" onClick={closeAllMenus} className="hover:text-blue-900 transition">Tech Stack</Link>
+            <Link to="/investor" onClick={closeAllMenus} className="hover:text-blue-900 transition">Investor Relations</Link>
+            <Link to="/contact" onClick={closeAllMenus} className="hover:text-blue-900 transition">Contact Us</Link>
           </motion.div>
         )}
       </AnimatePresence>

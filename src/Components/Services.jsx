@@ -26,9 +26,9 @@ const Services = () => {
               />
               <span className="text-lg font-semibold text-gray-900 block mb-2">{service.title}</span>
               <span className="text-base text-gray-600 block mb-4">{service.description}</span>
-              <a href={service.link} className="text-blue-900 text-sm inline-flex items-center hover:underline">
+              <Link to={service.link} className="text-blue-900 text-sm inline-flex items-center hover:underline">
                 Read More <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
